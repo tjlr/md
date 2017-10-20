@@ -60,7 +60,17 @@
 
 ``` git rebase -i ``` interaktywny rebase pozwalający na modyfikację historii
 
+ 
 
+##### połącznie istniejącego repo ze zdalnym serwerem
+
+``` cd existing_repo_dir ``` 
+
+``` git remote add origin git@github.com:reponame.git ```
+
+``` git push -u origin master ``` 
+
+ 
 
 ##### konfiguracja
 
