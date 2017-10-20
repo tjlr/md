@@ -62,7 +62,7 @@
 
  
 
-##### połącznie istniejącego repo ze zdalnym serwerem
+#### połącznie istniejącego repo ze zdalnym serwerem
 
 ``` cd existing_repo_dir ``` 
 
@@ -72,7 +72,7 @@
 
  
 
-##### konfiguracja
+#### konfiguracja
 
 konfiguracja jest sumą ustawień w kilku plikach czytanych w kolejności:
 
