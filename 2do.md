@@ -1,2 +1,0 @@
-- [ ] metar db save
-- [x] copy metar tables
