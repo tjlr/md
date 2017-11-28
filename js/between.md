@@ -1,4 +1,4 @@
-```
+```js
 String.prototype.between = function(prefix, suffix) {
   s = this;
   var i = s.indexOf(prefix);
