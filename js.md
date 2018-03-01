@@ -10,6 +10,13 @@ function _i(el,html){el.innerHTML=html;}
 function _e(el){el.innerHTML='';}
 function _sa(el,at,v){el.setAttribute(at,v);}
 ```
+### if
+```if (i>0) ? i-- : i ;``` to samo ```if (i>0) { i--;} else { i ; }```
+
+### if not null
+```js 
+if (!!val) { notNULL } else { isNULL }
+```
 
 ### between
 ```js
