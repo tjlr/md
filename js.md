@@ -10,6 +10,17 @@ function _i(el,html){el.innerHTML=html;}
 function _e(el){el.innerHTML='';}
 function _sa(el,at,v){el.setAttribute(at,v);}
 ```
+### request
+```js
+function _r(u,c,xml){if(xml===undefined){xml=false;}var x=new XMLHttpRequest();x.open("GET",u,true);x.onreadystatechange=function(){if(x.readyState==4){if(xml){c.call(x.responseXML);}else{c.call(x.response);}}};x.send(null);}
+```
+usage:
+```js
+_r('test.json', function() { 
+  console.log(JSON.parse(this))
+});
+```
+
 ### if
 ```if (i>0) ? i-- : i ;``` to samo ```if (i>0) { i--;} else { i ; }```
 
