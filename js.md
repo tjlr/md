@@ -12,6 +12,30 @@ function _sa(el,at,v){el.setAttribute(at,v);}
 ```
 ### request
 ```js
+function _r(u, c, xml)
+{
+    if (xml === undefined) {
+        xml = false;
+    }
+    var x = new XMLHttpRequest();
+    x.open("GET", u, true);
+    x.onreadystatechange = function ()
+    {
+        if (x.readyState == 4) {
+            if (xml) {
+                c.call(x.responseXML);
+            }
+            else {
+                c.call(x.response);
+            }
+        }
+    };
+    x.send(null);
+}
+```
+
+### request min
+```js
 function _r(u,c,xml){if(xml===undefined){xml=false;}var x=new XMLHttpRequest();x.open("GET",u,true);x.onreadystatechange=function(){if(x.readyState==4){if(xml){c.call(x.responseXML);}else{c.call(x.response);}}};x.send(null);}
 ```
 usage:
