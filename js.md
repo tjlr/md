@@ -43,6 +43,10 @@ usage:
 _r('test.json', function() { 
   console.log(JSON.parse(this))
 });
+
+_r('test.xml', function() { 
+    console.log(this);
+},true);
 ```
 
 ### if
