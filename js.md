@@ -114,3 +114,17 @@ function escapeHtml(css) {
   if(styleObj.display == "none" || styleObj.display == '') { el.style.display = "block"; } else { el.style.display = "none"; }
 }
 ```
+
+### How to build a Shadow DOM
+```html
+<div id="host"></div>
+```
+```js
+var host = document.querySelector('#host');
+var root = host.createShadowRoot(); // Create a Shadow Root
+// var root = host.attachShadow({mode: 'open'});
+// var root = host.attachShadow({mode: 'closed'});
+var div = document.createElement('div');
+div.textContent = 'This is Shadow DOM';
+root.appendChild(div); // Append elements to the Shadow Root
+```
