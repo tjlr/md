@@ -108,7 +108,7 @@ function escapeHtml(s) {
 
 ### toggle element by css selector
 ```js
-function escapeHtml(css) {
+function toggle(css) {
   el = document.querySelector(css);
   if (typeof window.getComputedStyle != "undefined") { styleObj = window.getComputedStyle(el, null); } else if (el.currentStyle != "undefined") { styleObj = el.currentStyle; }
   if(styleObj.display == "none" || styleObj.display == '') { el.style.display = "block"; } else { el.style.display = "none"; }
