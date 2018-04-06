@@ -24,3 +24,10 @@ LOAD DATA INFILE 'data.txt' INTO TABLE tbl_name
 "col1","col2","col3"\n
 ```
 
+### load xml to table
+```SQL
+LOAD XML LOCAL INFILE 'items.xml'
+INTO TABLE item
+ROWS IDENTIFIED BY '<item>';
+column tags are fields
+```
