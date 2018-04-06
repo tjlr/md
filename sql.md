@@ -13,6 +13,11 @@ SHOW TABLE STATUS FROM database_name
 ```
 all info about tables in db (total size = Data_lenght)
 
+```SQL
+CREATE TABLE IF NOT EXISTS dbDest.tblDest SELECT * FROM dbSrc.tblSrc;
+```
+kopia tabeli
+
 ```SQL 
 SELECT TIMESTAMPDIFF(SECOND,'2011-03-08 12:00:00',CURRENT_TIMESTAMP());
 ``` 
