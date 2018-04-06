@@ -32,7 +32,7 @@ część wspólna
 ```SQL
 SELECT * FROM table_tmp EXCEPT SELECT * FROM table
 ```
-rónica
+różnica
 
 
 //---------------------------
