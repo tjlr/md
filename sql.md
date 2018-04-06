@@ -51,4 +51,6 @@ SHOW CREATE PROCEDURE sp_name -- procedure body
 select * from information_schema.VIEWS -- views list
 SHOW CREATE VIEW view_name -- view body
 select * from information_schema.COLUMNS --
+ALTER DATABASE databasename CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE tablename CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
