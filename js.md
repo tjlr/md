@@ -136,6 +136,16 @@ function getSel() {
 document.forms[0].selectedtext.value = 'Found in: ' foundIn '\n' txt;
 }
 ```
+### each
+```js
+[].forEach.call(
+    document.querySelectorAll('selector'),
+    function(el){
+        el.doSomething // el item
+    }
+);
+```
+
 
 ### How to build a Shadow DOM
 ```html
