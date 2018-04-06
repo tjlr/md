@@ -25,6 +25,7 @@ różnica w sekundach pomiędzy podanym czasem a aktualnym
 
 
 //---------------------------
+```SQL
 SHOW TABLE STATUS FROM bcg4 WHERE `Engine` <> ""; -- bez widoków
 SHOW CREATE TABLE `table_name`;
 show full columns from `table_name`;
@@ -39,3 +40,4 @@ SHOW CREATE PROCEDURE sp_name -- procedure body
 select * from information_schema.VIEWS -- views list
 SHOW CREATE VIEW view_name -- view body
 select * from information_schema.COLUMNS --
+```
