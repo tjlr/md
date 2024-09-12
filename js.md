@@ -10,6 +10,18 @@ function _i(el,html){el.innerHTML=html;}
 function _e(el){el.innerHTML='';}
 function _sa(el,at,v){el.setAttribute(at,v);}
 ```
+
+### request simple
+```js
+function _r(u,c)
+{
+    var x = new XMLHttpRequest();
+    x.open("GET", u, true);
+    x.onreadystatechange = function () { if (x.readyState == 4) { c.call(x.response); } };
+    x.send(null);
+}
+```
+
 ### request
 ```js
 function _r(u, c, xml)
